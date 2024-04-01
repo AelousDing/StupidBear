@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StupidBear.ModuleA", "Modul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StupidBear.log4net", "StupidBear.log4net\StupidBear.log4net.csproj", "{81D838A2-CA0D-4602-90C8-C51C1DFD144E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StupidBear.Aop", "StupidBear.Aop\StupidBear.Aop.csproj", "{565DA4C3-D674-4B9E-B53B-87BFE7F280F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{81D838A2-CA0D-4602-90C8-C51C1DFD144E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81D838A2-CA0D-4602-90C8-C51C1DFD144E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81D838A2-CA0D-4602-90C8-C51C1DFD144E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{565DA4C3-D674-4B9E-B53B-87BFE7F280F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565DA4C3-D674-4B9E-B53B-87BFE7F280F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565DA4C3-D674-4B9E-B53B-87BFE7F280F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565DA4C3-D674-4B9E-B53B-87BFE7F280F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
