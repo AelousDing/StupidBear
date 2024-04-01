@@ -26,7 +26,9 @@ namespace StupidBear.Main
                 .AddScoped<MainWindowViewModel>()
                 .AddHostedService<WPFHostedService<App, MainWindow>>()
                 .AddRegion()
-                .AddMvvm();
+                .AddMvvm()
+                .AddMemoryCache();
+
             IHost host = builder.Build();
             host.UseRegion();
             host.UseModularity();
