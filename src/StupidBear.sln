@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StupidBear.Wpf", "StupidBear.Wpf\StupidBear.Wpf.csproj", "{CED90B11-B387-4674-937A-391E4ED15E50}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StupidBear.Core", "StupidBear.Core\StupidBear.Core.csproj", "{AFA8CFA9-9F95-442F-B990-350773E274B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StupidBear.Main", "StupidBear.Main\StupidBear.Main.csproj", "{9EA7E10C-C9F4-4713-B3E8-299B4DFEC67A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StupidBear.Main", "StupidBear.Main\StupidBear.Main.csproj", "{9EA7E10C-C9F4-4713-B3E8-299B4DFEC67A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StupidBear.Wpf", "StupidBear.Wpf\StupidBear.Wpf.csproj", "{5C9CB9BD-DC50-43CB-917D-0D7A6B0494FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CED90B11-B387-4674-937A-391E4ED15E50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CED90B11-B387-4674-937A-391E4ED15E50}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CED90B11-B387-4674-937A-391E4ED15E50}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CED90B11-B387-4674-937A-391E4ED15E50}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AFA8CFA9-9F95-442F-B990-350773E274B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AFA8CFA9-9F95-442F-B990-350773E274B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFA8CFA9-9F95-442F-B990-350773E274B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{9EA7E10C-C9F4-4713-B3E8-299B4DFEC67A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EA7E10C-C9F4-4713-B3E8-299B4DFEC67A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EA7E10C-C9F4-4713-B3E8-299B4DFEC67A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C9CB9BD-DC50-43CB-917D-0D7A6B0494FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C9CB9BD-DC50-43CB-917D-0D7A6B0494FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C9CB9BD-DC50-43CB-917D-0D7A6B0494FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C9CB9BD-DC50-43CB-917D-0D7A6B0494FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
