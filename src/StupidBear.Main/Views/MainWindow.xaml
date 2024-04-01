@@ -4,11 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StupidBear.Main.Views"
-        xmlns:vm="clr-namespace:StupidBear.Wpf.Mvvm;assembly=StupidBear.Wpf"
+        xmlns:vm="clr-namespace:StupidBear.Wpf.Mvvm;assembly=StupidBear.wpf"
+        xmlns:region="clr-namespace:StupidBear.Wpf.Navigation.Regions;assembly=StupidBear.Wpf"
         mc:Ignorable="d"
         vm:ViewModelLocator.AutoWireViewModel="True"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock Text="{Binding Message}"/>
+        <ContentControl region:RegionManager.RegionName="ContentRegion"/>
     </Grid>
 </Window>
