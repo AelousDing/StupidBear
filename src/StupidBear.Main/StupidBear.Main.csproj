@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Modules\StupidBear.ModuleA\StupidBear.ModuleA.csproj" />
     <ProjectReference Include="..\StupidBear.Core\StupidBear.Core.csproj" />
+    <ProjectReference Include="..\StupidBear.log4net\StupidBear.log4net.csproj" />
     <ProjectReference Include="..\StupidBear.Wpf\StupidBear.Wpf.csproj" />
   </ItemGroup>
 

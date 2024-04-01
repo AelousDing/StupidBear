@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using StupidBear.Extensions;
+using StupidBear.log4net;
 using StupidBear.Main.ViewModels;
 using StupidBear.Main.Views;
 using StupidBear.Wpf;
@@ -16,6 +18,9 @@ namespace StupidBear.Main
         {
             HostApplicationBuilder builder = Host.CreateApplicationBuilder();
             builder.AddModularity();
+            builder.Logging.ClearProviders();
+            builder.Logging.AddLog4net();
+
             builder.Services.AddSingleton<App>()
                 .AddScoped<MainWindow>()
                 .AddScoped<MainWindowViewModel>()
