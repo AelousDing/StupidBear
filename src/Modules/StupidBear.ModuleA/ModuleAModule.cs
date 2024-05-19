@@ -12,12 +12,16 @@ namespace StupidBear.ModuleA
         {
             var regionManager = services.GetService<IRegionManager>();
             regionManager?.RegisterViewWithRegion("ContentRegion", typeof(ViewA));
+            regionManager?.RegisterViewWithRegion("ContentRegion", typeof(ViewB));
         }
 
         public void ConfigService(IServiceCollection services)
         {
             services.AddTransient<ViewA>();
             services.AddTransient<ViewAViewModel>();
+
+            services.AddTransient<ViewB>();
+            services.AddTransient<ViewBViewModel>();
         }
     }
 }

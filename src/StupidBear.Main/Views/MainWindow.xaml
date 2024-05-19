@@ -10,6 +10,14 @@
         vm:ViewModelLocator.AutoWireViewModel="True"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ContentControl region:RegionManager.RegionName="ContentRegion"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Height="100">
+            <Button Content="ViewA" Command="{Binding NavigateCommand}" CommandParameter="StupidBear.ModuleA.Views.ViewA,StupidBear.ModuleA,Version=1.0.0.0,Culture=neutral,PublicKeyToken=null" Margin="5"/>
+            <Button Content="ViewB" Command="{Binding NavigateCommand}" CommandParameter="StupidBear.ModuleA.Views.ViewB,StupidBear.ModuleA,Version=1.0.0.0,Culture=neutral,PublicKeyToken=null" Margin="5"/>
+        </StackPanel>
+        <ContentControl Grid.Row="1" region:RegionManager.RegionName="ContentRegion"/>
     </Grid>
 </Window>

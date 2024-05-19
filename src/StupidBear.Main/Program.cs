@@ -8,6 +8,8 @@ using StupidBear.Main.Views;
 using StupidBear.Wpf;
 using StupidBear.Wpf.Mvvm;
 using StupidBear.Wpf.Navigation.Regions;
+using System.Reflection;
+using System.Windows;
 
 namespace StupidBear.Main
 {
@@ -30,7 +32,7 @@ namespace StupidBear.Main
                 .AddMemoryCache();
 
             IHost host = builder.Build();
-            host.UseRegion();
+            host.UseRegion<MainWindow>();
             host.UseModularity();
             host.Run();
         }

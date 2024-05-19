@@ -3,6 +3,7 @@ using Microsoft.Extensions.Hosting;
 using StupidBear.Core.Ioc;
 using StupidBear.Core.Navigation.Regions;
 using StupidBear.Wpf.Navigation.Regions.Behaviors;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 
@@ -39,21 +40,18 @@ namespace StupidBear.Wpf.Navigation.Regions
 
             return services;
         }
-        public static IHost UseRegion(this IHost host)
+        public static IHost UseRegion<TShell>(this IHost host) where TShell : Window
         {
             ContainerLocator.SetContainerExtension(() => host.Services);
-            //RegionManager.SetRegionManager(shell, host.Services.GetService<IRegionManager>());
-            RegionManager.UpdateRegions();
 
             var regionAdapterMappings = host.Services.GetService<RegionAdapterMappings>();
             regionAdapterMappings?.RegisterDefaultRegionAdapterMappings();
 
-            var aa = host.Services.GetService<RegionAdapterMappings>();
-            var aaa = ContainerLocator.Current.GetService<RegionAdapterMappings>();
-            var ss = host.Services.GetService<DelayedRegionCreationBehavior>();
-
             var regionBehaviors = host.Services.GetService<IRegionBehaviorFactory>();
             regionBehaviors?.RegisterDefaultRegionBehaviors();
+
+            RegionManager.SetRegionManager(host.Services.GetRequiredService(typeof(TShell)) as DependencyObject, host.Services.GetService<IRegionManager>());
+            RegionManager.UpdateRegions();
 
             return host;
         }
